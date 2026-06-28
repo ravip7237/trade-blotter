@@ -1,0 +1,6 @@
+@TradeBlotterApi_HostAddress = http://localhost:5048
+
+GET {{TradeBlotterApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
