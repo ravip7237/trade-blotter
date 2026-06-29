@@ -60,12 +60,12 @@ Calls to repository layer should only be allowed from Service layer
 Proper API design
 Variable names should be meaningful 
 Clear endpoint contracts 
-well defined error handling with appropriate HTTP status codes
-for frontend follow industry-standard layout for a clean, scalable Vue application
+Well defined error handling with appropriate HTTP status codes
+For frontend follow industry-standard layout for a clean, scalable Vue application
 Vue patterns
 Composition API used naturally, reactivity handled cleanly, state in Pinia not scattered
 UI judgment
-Scannable blotter. Intuitive form. 
+Scannable blotter. Intuitive form
 
 # Tests
 Full test coverage including tests for position calculation logic.
