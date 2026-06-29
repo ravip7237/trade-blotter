@@ -26,7 +26,8 @@ Timestamp
 
 Positions should be derived from trades, not stored separately. A net position of zero means the symbol can be omitted from the response.
 
-# Persistence: SQLite or SQL Server LocalDB is fine.
+# Persistence: 
+SQLite is fine.
 
 # Frontend (Vue 3, Composition API):
 Build a single-page application with two main sections:
