@@ -47,25 +47,18 @@ Updates reactively when a new trade is submitted
 
 Use Pinia for state management and Vite for tooling. Any component library is fine, or none at all.
 
-# Guidlines:
-Best practices for each layer (persistence layer, domain model, Api layer, frontend layer)
-Follow industry standard coding conventions and guidlines for all layers
-Clean and well defined backend folder structure ((/Controllers, /Services, /Repositories, /Models, /Dtos)
-Well designed Domain models
-Clean, well reasoned Trade and Position entities 
-Create DTO objects to communicate with Frontend layer
-Controllers should use only DTOs and not use Entity object
-Correct Position logic (average cost on mixed buys/sells)
-Calls to repository layer should only be allowed from Service layer
-Proper API design
-Variable names should be meaningful 
-Clear endpoint contracts 
-Well defined error handling with appropriate HTTP status codes
-For frontend follow industry-standard layout for a clean, scalable Vue application
-Vue patterns
-Composition API used naturally, reactivity handled cleanly, state in Pinia not scattered
-UI judgment
-Scannable blotter. Intuitive form
+# Guidelines:
+- **Best practices:** Follow best practices for each layer (persistence, domain model, API, frontend).
+- **Coding conventions:** Follow industry-standard coding conventions across the codebase.
+- **Backend structure:** Keep a clean, well-defined backend folder structure (`/Controllers`, `/Services`, `/Repositories`, `/Models`, `/Dtos`).
+- **Domain models:** Design well-reasoned `Trade` and `Position` domain models.
+- **DTOs & controllers:** Use DTOs to communicate with the frontend; controllers should accept and return only DTOs (not entity objects).
+- **Service/repository boundaries:** Only the service layer may call the repository layer.
+- **Position logic:** Implement correct position calculation (net quantity and average cost handling for mixed buys/sells).
+- **API quality:** Maintain clear endpoint contracts, meaningful variable names, and proper API design.
+- **Error handling:** Provide well-defined error handling and appropriate HTTP status codes for validation and failure cases.
+- **Frontend patterns:** Use a clean, scalable Vue layout, apply Composition API naturally, keep state in Pinia, and handle reactivity correctly.
+- **UI judgment:** Ensure the blotter is scannable (clear Buy/Sell cues) and the trade form is intuitive with basic validation.
 
 # Tests
 Full test coverage including tests for position calculation logic.
